@@ -81,3 +81,14 @@ body.light {
   transform: scale(1.05);
   box-shadow: 0 0 15px #a78bfa;
 }
+
+.demo-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.demo-text span {
+  color: #a78bfa;
+  font-weight: bold;
+}

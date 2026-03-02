@@ -182,3 +182,58 @@ input:checked + .slider {
 input:checked + .slider::before {
   transform: translateX(26px);
 }
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Main container (VERY IMPORTANT) */
+  .login-wrapper,
+  .app,
+  .container,
+  .main {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  /* Left + Right sections */
+  .login-left,
+  .login-right {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Remove split screen */
+  .login-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix cards */
+  .login-card,
+  .blog-card,
+  .card {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  /* Fix inputs */
+  input, textarea {
+    width: 100% !important;
+  }
+
+  /* Fix buttons */
+  button {
+    width: 100%;
+  }
+
+  /* Remove side spacing */
+  .banner,
+  .products {
+    padding: 20px !important;
+  }
+}

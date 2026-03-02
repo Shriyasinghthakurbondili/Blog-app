@@ -26,7 +26,11 @@ const SignIn = ({ onLogin }) => {
           onChange={(e) => setName(e.target.value)}
         />
 
-        <button onClick={handleLogin}>Sign In</button>
+       <button onClick={handleLogin}>Sign In</button>
+
+<p className="demo-text">
+  Demo: Try with name <span>Shriya</span>
+</p>
       </div>
     </div>
   );
